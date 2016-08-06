@@ -1,0 +1,11 @@
+Este es el codigo de la prueba con el display en modulo I2C.
+Tienen que agregar la libreria LiquidCrystalDisplay_I2C.
+Funciona perfect!
+
+Para usar el I2C hay que ver que número en hexadecimal usa, ya que esta es la dirección de la componente I2C. Por lo tanto se usa el código "I2C_scan" que se encuentra en la carpeta de "Desafío/Librerias/LyquidCrystalDisplay_I2C" en el IDE de Arduino.
+Luego se puede usar la libreria LCD_I2C con normalidad en el IDE.
+Esta tiene las mismas funciones que la libreria LCD. Solo cambia es la declaración de la libreria, según leí, esta funciona para todos los display:
+
+LiquidCrystal_I2C   lcd(I2C_ADDR,2, 1, 0, 4, 5, 6, 7);
+
+Donde I2C_ADDR es la dirección de la componente calculada con el código "I2C_scan".
